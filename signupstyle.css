@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	text-align: center;
+	color: black;
+	padding: 20px;
+	background: #EE82EE;
+}
+
+div{
+	alignment-baseline: central;
+}
+
+.image{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Images/signup.JPEG");
+	max-width: 1600px;
+	margin: auto;
+	height: 130vh;
+	background-size: cover;
+}
+
+.signup{
+	text-align: center;
+	height: 100vh;
+	max-width: 80vh;
+	color: white;
+	margin: 30px 0px 0px 450px;
+	background-color: #6A5ACD;
+	color: black;	
+}
+
+.signup input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.signup input[type="fname"], .signup input[type="lname"], .signup input[type="email"], .signup input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.signup input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #EE82EE;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.signup input[type="submit"]:hover{
+	background: #efed40;
+	color: #262626;
+}
+
+.signup a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+::placeholder{
+	color: rgba(255,255,25,0.5);
+	text-align: center;
+}
+
+.signup .top{
+	text-align: center;
+	color: #ffff;
+}

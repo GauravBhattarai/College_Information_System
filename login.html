@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+
+</head>
+<body>
+	<div class="image">
+
+	<div class="header">
+		<h1>LOGIN FORM</h1><br><br>
+	</div>
+
+	<form action="Main.html" method="post" onsubmit="return validate();">
+		<div class="login">
+			<div class="top">
+				<h3>Login Here</h3><br><br>
+			</div>
+
+			<label>Email :</label><br><br>
+			<input type="email" placeholder="Enter your Email" name="email" id="email"><br><br>
+
+			<label>Password :</label><br><br>
+			<input type="password" placeholder="Enter your Password" name="password" id="password"><br><br>
+
+			
+			<input type="submit" name="submit" value="Login" id="submit">
+
+			<br><br><br>
+			<a href='Main.html'>Forget password</a>
+		</div>
+
+		</form>
+		
+	</div>
+
+
+
+	<div id="eresult" style="color: red";></div>
+	<script type="text/javascript">
+		function validate(){
+			var email= document.getElementsByID('email').value;
+			var password= document.getElementsByID('password').value;
+
+			if(email=='' || password=='')
+			{
+				document.getElementsByID("eresult").innerHTML= "No blank values allowed!!";
+				return false;
+			}
+
+			else if(password.length<4)
+			{
+				document.getElementsByID("eresult").innerHTML= "Password is too short";
+				return false;	
+			}
+
+			else{
+				true;
+			}
+		}
+	</script>
+
+</body>
+</html>
